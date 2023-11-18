@@ -42,7 +42,7 @@ h4 {
 
 @media screen and (max-width:680px){
 
-	.card {
+.card {
     top: 50%;
     left: 50%;
     color: #013243;
@@ -54,6 +54,29 @@ h4 {
     box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
    transition: 1s;
 	}
+.card:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: auto;
+  height: 5px;
+  background: #BAC1BA;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: auto;
+  height: 100%;
+  background: #92A29C;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+
 }
 
 .card:hover {
