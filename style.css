@@ -39,57 +39,6 @@ h4 {
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
   transition: 1s;
 }
-
-@media screen and (max-width:680px){
-
-	.card .imgBox .img {
-  min-width: 150px;
-  max-height: 300px;
-}
-
-.card {
-    top: 50%;
-    left: 50%;
-    color: #013243;
-		width: auto;
-		float: none;
-    background: #e0e1dc;
-    transform-style: preserve-3d;
-    transform: translate(-50%, -50%) perspective(500px);
-    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
-   transition: 1s;
-	}
-
-	.card:hover {
-  transform: translate(-50%, -50%) perspective(500px) rotate(15deg) scale(1.2);
-  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
-}
-	
-.card:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: auto;
-  height: 5px;
-  background: #BAC1BA;
-  transform-origin: bottom;
-  transform: skewX(-45deg);
-}
-.card:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -5px;
-  width: auto;
-  height: 100%;
-  background: #92A29C;
-  transform-origin: left;
-  transform: skewY(-45deg);
-}
-
-}
-
 .card:hover {
   transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
