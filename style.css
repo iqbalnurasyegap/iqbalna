@@ -40,6 +40,22 @@ h4 {
   transition: 1s;
 }
 
+@media screen and (max-width:680px){
+
+	.card {
+    top: 50%;
+    left: 50%;
+    color: #013243;
+		width: auto;
+		float: none;
+    background: #e0e1dc;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
+   transition: 1s;
+	}
+}
+
 .card:hover {
   transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
